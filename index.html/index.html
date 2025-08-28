@@ -16,40 +16,23 @@
     nav a:hover{text-decoration:underline}
     .hero{padding:60px 20px;text-align:center;background:#ffffff}
 
-    /* 品牌行：整体水平居中 */
-    .brandmark{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:18px;flex-wrap:wrap}
-
-    /* 左侧 LOGO：保持原图不改，但用裁切只露出左侧图案区 */
-    .logo-wrap{
-      width:100px;           /* 可按需调节：图标显示宽度 */
-      height:100px;          /* 设为正方形，突出图形 */
-      border-radius:10px;    /* 轻微圆角更柔和（可删） */
-      overflow:hidden;       /* 关键：裁切右侧文字 */
-      display:flex;
-      align-items:center;
-      justify-content:flex-start;
-      background:#fff;       /* 原图白底，这里保持一致 */
-      box-shadow:0 6px 16px rgba(0,0,0,.06);
+    /* Brand row: center everything */
+    .brandmark{
+      display:flex;align-items:center;justify-content:center;
+      gap:24px;margin-top:22px;flex-wrap:wrap;
     }
-    .logo-wrap img{
-      height:100%;           /* 以高度填充容器 */
-      width:auto;
-      object-fit:cover;
-      object-position:left center; /* 关键：对齐到最左，隐藏右侧文字 */
-      transform:translateX(0);      /* 如需再向左/右微调，可设置负值/正值 */
+    /* Logo size tuned to match wordmark cap height visually */
+    .brandmark img{
+      height:84px;width:auto;display:block;
     }
-
-    /* 右侧“TAKASA”——保持你现在的颜色与大小 */
+    /* Wordmark (unchanged color/size, serif look) */
     .wordmark{
       font-family:Georgia,'Times New Roman',serif;
-      font-size:58px;        /* 大小不变 */
-      line-height:1;
-      color:#0f2a52;         /* 颜色不变（深蓝） */
-      letter-spacing:2px;
+      font-size:58px;line-height:1;color:#0f2a52;letter-spacing:2px;
     }
-
+    /* Small-screen adjustments */
     @media (max-width:640px){
-      .logo-wrap{width:80px;height:80px}
+      .brandmark img{height:70px}
       .wordmark{font-size:42px;letter-spacing:1px}
     }
 
@@ -71,12 +54,12 @@
 
   <div class="hero">
     <h2>ビジネスを、もっとシンプルに。<br>専門性で世界とつながる。</h2>
-    <p>貿易・飲食関連・事務手続き代行を中心に、調達・品質管理・通関・物流・ローカライズまでをワンストップでご提供します。</p>
+    <p>貿易・飲食関連・事務手続き代行を中心に、調達・品質管理・通関・物流・ローカライズまでワンストップでご提供します。</p>
 
-    <!-- 左LOGO（只显示图案，无文字） + 右“TAKASA”，整体水平居中 -->
+    <!-- Left logo (original image) + right TAKASAWA, centered -->
     <div class="brandmark" aria-label="Takasawa brand">
-      <div class="logo-wrap"><img src="./logo.jpg" alt="Takasawa ロゴ（図形）"></div>
-      <div class="wordmark">TAKASA</div>
+      <img src="./logo.jpg" alt="Takasawa ロゴ（図形）">
+      <div class="wordmark">TAKASAWA</div>
     </div>
   </div>
 
@@ -92,7 +75,7 @@
   <section id="services">
     <h2>事業内容</h2>
     <div class="card"><h3>貿易（輸出入）</h3><p>調達・国際物流・通関まで一貫支援。最適なサプライチェーン構築をサポートします。</p></div>
-    <div class="card"><h3>飲食関連</h3><p>飲食商材の取扱い・プロモーション。品質・安全性に配慮したサプライ体制を構築。</p></div>
+    <div class="card"><h3>飲食関連</h3><p>飲食商材の取扱い・プロモーション。品質・安全性に配慮したサプライ体制を构築。</p></div>
     <div class="card"><h3>事務手続き代行</h3><p>各種ビジネス手続きの代行で、事業運営の負担を軽減しスピードアップを実現。</p></div>
   </section>
 
