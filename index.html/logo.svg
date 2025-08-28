@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
-  <text x="50%" y="50%" font-family="Arial, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif"
-        font-size="64" fill="#0f2a52" text-anchor="middle" alignment-baseline="middle">
-    TAKASAWA
-  </text>
-  <text x="50%" y="75%" font-family="Arial, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif"
-        font-size="28" fill="#0f2a52" text-anchor="middle" alignment-baseline="middle">
-    高沢商事株式会社
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
+  <!-- 左侧蓝黄Logo占位：用两个方块模拟 -->
+  <rect x="40" y="80" width="60" height="60" fill="#1f4e9a"/>
+  <rect x="70" y="110" width="60" height="60" fill="#f4b400"/>
+  
+  <!-- 英文公司名 -->
+  <text x="180" y="130" font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" fill="#1f4e9a">TAKASAWA</text>
+        
+  <!-- 日文公司名 -->
+  <text x="180" y="180" font-family="'Noto Serif JP', 'Yu Mincho', serif"
+        font-size="32" fill="#1f4e9a">高沢商事株式会社</text>
 </svg>
