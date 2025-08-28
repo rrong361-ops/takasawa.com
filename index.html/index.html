@@ -4,40 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>高沢商事株式会社 | Takasawa Trading Co., Ltd.</title>
-  <meta name="description" content="高沢商事株式会社｜貿易・飲食関連・事務手続き代行。東京・大田区を拠点に、調達・品質管理・通関・物流・ローカライズまでワンストップでご提供します。">
-  <link rel="icon" href="./logo.jpg">
+  <meta name="description" content="高沢商事株式会社｜貿易・飲食関連・事務手続き代行。東京・大田区を拠点に、調達・品質管理・通関・物流・ローカライズまでワンストップで支援します。">
   <style>
-    :root{ --navy:#0f2a52; --ink:#1f2937; --paper:#ffffff; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;background:#ffffff;color:var(--ink)}
-    header{background:var(--navy);color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
+    body{margin:0;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;background:#ffffff;color:#1f2937}
+    header{background:#0f2a52;color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
     header h1{margin:0;font-size:18px}
     nav a{color:#e5eaf5;margin-left:16px;text-decoration:none}
     nav a:hover{text-decoration:underline}
     .hero{padding:60px 20px;text-align:center;background:#ffffff}
-
-    /* Brand row: center everything */
-    .brandmark{
-      display:flex;align-items:center;justify-content:center;
-      gap:24px;margin-top:22px;flex-wrap:wrap;
-    }
-    /* Logo size tuned to match wordmark cap height visually */
-    .brandmark img{
-      height:84px;width:auto;display:block;
-    }
-    /* Wordmark (unchanged color/size, serif look) */
-    .wordmark{
-      font-family:Georgia,'Times New Roman',serif;
-      font-size:58px;line-height:1;color:#0f2a52;letter-spacing:2px;
-    }
-    /* Small-screen adjustments */
-    @media (max-width:640px){
-      .brandmark img{height:70px}
-      .wordmark{font-size:42px;letter-spacing:1px}
-    }
-
-    section{padding:56px 20px;max-width:900px;margin:auto}
-    section h2{text-align:center;margin-bottom:16px;color:var(--navy)}
+    .brandmark{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:22px;flex-wrap:wrap}
+    .brandmark img{height:84px;width:auto;display:block}
+    .wordmark{font-family:Georgia,'Times New Roman',serif;font-size:58px;line-height:1;color:#0f2a52;letter-spacing:2px}
+    @media (max-width:640px){.brandmark img{height:70px}.wordmark{font-size:42px;letter-spacing:1px}}
+    section{padding:56px 20px;max-width:1000px;margin:auto}
+    section h2{text-align:center;margin-bottom:16px;color:#0f2a52}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px}
+    .service{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    .service img{width:100%;border-radius:12px;margin-bottom:10px;object-fit:cover;height:180px}
+    .service h3{margin:0 0 8px;font-size:20px;color:#0f2a52}
+    .service p{margin:0;font-size:15px;color:#555}
     .card{background:#fff;border-radius:12px;padding:20px;margin:10px 0;box-shadow:0 6px 18px rgba(0,0,0,.08)}
     footer{background:#fff;color:#6b7280;text-align:center;padding:16px;margin-top:40px;border-top:1px solid #ddd}
   </style>
@@ -55,8 +40,6 @@
   <div class="hero">
     <h2>ビジネスを、もっとシンプルに。<br>専門性で世界とつながる。</h2>
     <p>貿易・飲食関連・事務手続き代行を中心に、調達・品質管理・通関・物流・ローカライズまでワンストップでご提供します。</p>
-
-    <!-- Left logo (original image) + right TAKASAWA, centered -->
     <div class="brandmark" aria-label="Takasawa brand">
       <img src="./logo.jpg" alt="Takasawa ロゴ（図形）">
       <div class="wordmark">TAKASAWA</div>
@@ -74,9 +57,23 @@
 
   <section id="services">
     <h2>事業内容</h2>
-    <div class="card"><h3>貿易（輸出入）</h3><p>調達・国際物流・通関まで一貫支援。最適なサプライチェーン構築をサポートします。</p></div>
-    <div class="card"><h3>飲食関連</h3><p>飲食商材の取扱い・プロモーション。品質・安全性に配慮したサプライ体制を构築。</p></div>
-    <div class="card"><h3>事務手続き代行</h3><p>各種ビジネス手続きの代行で、事業運営の負担を軽減しスピードアップを実現。</p></div>
+    <div class="services">
+      <div class="service">
+        <img src="./trade.jpg" alt="貿易イメージ">
+        <h3>貿易（輸出入）</h3>
+        <p>調達・国際物流・通関まで一貫支援。最適なサプライチェーン構築をサポートします。</p>
+      </div>
+      <div class="service">
+        <img src="./food.jpg" alt="飲食関連イメージ">
+        <h3>飲食関連</h3>
+        <p>飲食商材の取扱い・プロモーション。品質・安全性に配慮したサプライ体制を構築。</p>
+      </div>
+      <div class="service">
+        <img src="./office.jpg" alt="事務手続き代行イメージ">
+        <h3>事務手続き代行</h3>
+        <p>各種ビジネス手続きの代行で、事業運営の負担を軽減しスピードアップを実現。</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
