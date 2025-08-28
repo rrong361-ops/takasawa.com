@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
-  <!-- 左侧蓝黄Logo占位：用两个方块模拟 -->
-  <rect x="40" y="80" width="60" height="60" fill="#1f4e9a"/>
-  <rect x="70" y="110" width="60" height="60" fill="#f4b400"/>
-  
-  <!-- 英文公司名 -->
-  <text x="180" y="130" font-family="Georgia, 'Times New Roman', serif"
-        font-size="72" fill="#1f4e9a">TAKASAWA</text>
-        
-  <!-- 日文公司名 -->
-  <text x="180" y="180" font-family="'Noto Serif JP', 'Yu Mincho', serif"
-        font-size="32" fill="#1f4e9a">高沢商事株式会社</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <g transform="translate(100, 50)">
+    <!-- 左侧蓝+黄Logo图案（简化用两个矩形代替实际图形） -->
+    <rect x="0" y="20" width="60" height="60" fill="#1f4e9a"/>
+    <rect x="30" y="50" width="60" height="60" fill="#f4b400"/>
+    <!-- 右侧公司名 -->
+    <text x="120" y="80" font-family="Georgia, 'Times New Roman', serif"
+          font-size="72" fill="#0f2a52">TAKASAWA</text>
+  </g>
 </svg>
